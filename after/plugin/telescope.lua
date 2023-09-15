@@ -1,0 +1,6 @@
+require("fzf-lua")
+vim.keymap.set("n", "<c-P>", "<cmd>lua require('fzf-lua').git_files()<CR>", { silent = true })
+vim.keymap.set("n", "<leader>/", "<cmd>lua require('fzf-lua').live_grep_native()<CR>", { silent = true })
+vim.keymap.set("n", "<leader>?", "<cmd>lua require('fzf-lua').grep_cword()<CR>", { silent = true })
+vim.keymap.set('n', '<leader>ff', "<cmd>lua require('fzf-lua').files()<CR>", {})
+vim.keymap.set('n', '<leader>fb', "<cmd>lua require('fzf-lua').buffers()<CR>", {})
